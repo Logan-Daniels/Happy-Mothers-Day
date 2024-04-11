@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b2f73be1dcadcdec2955e7feb05917ad {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b2f73be1dcadcdec2955e7feb05917ad" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b2f73be1dcadcdec2955e7feb05917ad = L.map(
+                "map_b2f73be1dcadcdec2955e7feb05917ad",
+                {
+                    center: [43.66977878442531, -79.38867336311971],
+                    crs: L.CRS.EPSG3857,
+                    maxBounds: [[-90, -180], [90, 180]],
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2d711d623b1f3c7ac1c1445b10524713 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 2, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_2d711d623b1f3c7ac1c1445b10524713.addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+            var tile_layer_f7d5ebdc475e8f48a802bd25a18f7c46 = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/logandaniels/cluryho1d01wt01pbdqtxdp21/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibG9nYW5kYW5pZWxzIiwiYSI6ImNsdXJ3bnAwbjA2N3EybHBlb2g0Y3h2N3cifQ.QyYyoAUmZGdiE8h7yh8KfA",
+                {"attribution": " ", "detectRetina": true, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": "2", "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f7d5ebdc475e8f48a802bd25a18f7c46.addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+            var marker_bd32c52a1c27957b3651891c6471b7fb = L.marker(
+                [43.706843167968444, -79.43343763536379],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_aed8ca28f32032b8f198ff92ae9bd6b7 = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/canada/canada_640.png", "popupAnchor": [0, -80]});
+        marker_bd32c52a1c27957b3651891c6471b7fb.setIcon(custom_icon_aed8ca28f32032b8f198ff92ae9bd6b7);
+        
+    
+        var popup_585cecc72acc8136398f788baa9dc6e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2a53dca7331a7a2875ed74714088a58 = $(`<div id="html_b2a53dca7331a7a2875ed74714088a58" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">720 Briar Hill Ave</h4><img src='https://i.imgur.com/qHeXMDn.jpg' alt="720 Briar Hill Ave"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;">Your travelling spirit seems to have rubbed off on me</p></div>`)[0];
+                popup_585cecc72acc8136398f788baa9dc6e2.setContent(html_b2a53dca7331a7a2875ed74714088a58);
+            
+        
+
+        marker_bd32c52a1c27957b3651891c6471b7fb.bindPopup(popup_585cecc72acc8136398f788baa9dc6e2)
+        ;
+
+        
+    
+    
+            var marker_84905584a6027718ed66fca1071c9f15 = L.marker(
+                [44.06580278508552, -77.91405655898555],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_ed5821144143a84c2580852f1ab50991 = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/canada/canada_640.png", "popupAnchor": [0, -80]});
+        marker_84905584a6027718ed66fca1071c9f15.setIcon(custom_icon_ed5821144143a84c2580852f1ab50991);
+        
+    
+        var popup_18fcc55b1b2774c7b1abc41ae02cc428 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b3433b630389ae846d8533f46c5e9be = $(`<div id="html_5b3433b630389ae846d8533f46c5e9be" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">The Big Apple</h4><img src='https://i.imgur.com/ly25nux.jpg' alt="The Big Apple"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;">Quite a LOVEly roadside attraction</p></div>`)[0];
+                popup_18fcc55b1b2774c7b1abc41ae02cc428.setContent(html_5b3433b630389ae846d8533f46c5e9be);
+            
+        
+
+        marker_84905584a6027718ed66fca1071c9f15.bindPopup(popup_18fcc55b1b2774c7b1abc41ae02cc428)
+        ;
+
+        
+    
+    
+            var marker_7499b3fe76ae066408d1ea9e24c8d729 = L.marker(
+                [35.7119, 139.7928],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_2f73cf57a6c4fdbdea0bfa2deee99a4a = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/japan/japan_640.png", "popupAnchor": [0, -80]});
+        marker_7499b3fe76ae066408d1ea9e24c8d729.setIcon(custom_icon_2f73cf57a6c4fdbdea0bfa2deee99a4a);
+        
+    
+        var popup_2b0c050b354ba71107c9435a20719bf0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_766dd3455c0b3a72dcaac05bdaf58567 = $(`<div id="html_766dd3455c0b3a72dcaac05bdaf58567" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Tea Ceremony</h4><img src='https://i.imgur.com/W7Po077.jpg' alt="Tea Ceremony"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;"></p></div>`)[0];
+                popup_2b0c050b354ba71107c9435a20719bf0.setContent(html_766dd3455c0b3a72dcaac05bdaf58567);
+            
+        
+
+        marker_7499b3fe76ae066408d1ea9e24c8d729.bindPopup(popup_2b0c050b354ba71107c9435a20719bf0)
+        ;
+
+        
+    
+    
+            var marker_8045e2ea6e6351cb30ac00617aac8016 = L.marker(
+                [35.7094, 139.8086],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_38409cb43a2043114d971d238c7276c2 = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/japan/japan_640.png", "popupAnchor": [0, -80]});
+        marker_8045e2ea6e6351cb30ac00617aac8016.setIcon(custom_icon_38409cb43a2043114d971d238c7276c2);
+        
+    
+        var popup_d068bad0f249ca8530aaa6bdc3c3ade5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0c67a6362a175a46c6c7eb379e4bb34 = $(`<div id="html_f0c67a6362a175a46c6c7eb379e4bb34" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Tokyo Skytree</h4><img src='https://i.imgur.com/g5xFE4w.jpg' alt="Tokyo Skytree"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;"></p></div>`)[0];
+                popup_d068bad0f249ca8530aaa6bdc3c3ade5.setContent(html_f0c67a6362a175a46c6c7eb379e4bb34);
+            
+        
+
+        marker_8045e2ea6e6351cb30ac00617aac8016.bindPopup(popup_d068bad0f249ca8530aaa6bdc3c3ade5)
+        ;
+
+        
+    
+    
+            var marker_95ed86f8d710addf5cf147f71be8a6eb = L.marker(
+                [35.2562, 139.048],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_3cf2f4a4a077edf759c981daaabb773c = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/japan/japan_640.png", "popupAnchor": [0, -80]});
+        marker_95ed86f8d710addf5cf147f71be8a6eb.setIcon(custom_icon_3cf2f4a4a077edf759c981daaabb773c);
+        
+    
+        var popup_47235a2ab493ecfdb7d61740c2239b6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe7517b12dd9614018310796cae958ba = $(`<div id="html_fe7517b12dd9614018310796cae958ba" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Box Burger</h4><img src='https://i.imgur.com/jlhhitN.jpg' alt="Box Burger"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;"></p></div>`)[0];
+                popup_47235a2ab493ecfdb7d61740c2239b6e.setContent(html_fe7517b12dd9614018310796cae958ba);
+            
+        
+
+        marker_95ed86f8d710addf5cf147f71be8a6eb.bindPopup(popup_47235a2ab493ecfdb7d61740c2239b6e)
+        ;
+
+        
+    
+    
+            var marker_11450a63b093edb67e7dcaff3d3c0aee = L.marker(
+                [34.9946, 135.7854],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_3b9d0ed321625791f59127e573afec31 = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/japan/japan_640.png", "popupAnchor": [0, -80]});
+        marker_11450a63b093edb67e7dcaff3d3c0aee.setIcon(custom_icon_3b9d0ed321625791f59127e573afec31);
+        
+    
+        var popup_d1ec0d4c300763e3bd407f54110a2fc8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e96d4ca3b153ea7e45501b4cc0123631 = $(`<div id="html_e96d4ca3b153ea7e45501b4cc0123631" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Kiyomizu-dera</h4><img src='https://i.imgur.com/Npa3uYv.jpg' alt="Kiyomizu-dera"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;"></p></div>`)[0];
+                popup_d1ec0d4c300763e3bd407f54110a2fc8.setContent(html_e96d4ca3b153ea7e45501b4cc0123631);
+            
+        
+
+        marker_11450a63b093edb67e7dcaff3d3c0aee.bindPopup(popup_d1ec0d4c300763e3bd407f54110a2fc8)
+        ;
+
+        
+    
+    
+            var marker_41f50cd95c2c2665b2578cc72376924e = L.marker(
+                [34.9974, 135.7811],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_b5609b426a61c880ed11ee4ab131081a = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/japan/japan_640.png", "popupAnchor": [0, -80]});
+        marker_41f50cd95c2c2665b2578cc72376924e.setIcon(custom_icon_b5609b426a61c880ed11ee4ab131081a);
+        
+    
+        var popup_b99afcdd74539f1800a7e897944f66df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83f85a13e7dd91ba6709bd11276d167f = $(`<div id="html_83f85a13e7dd91ba6709bd11276d167f" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Masuyacho</h4><img src='https://i.imgur.com/RO81Kc8.jpg' alt="Masuyacho"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;"></p></div>`)[0];
+                popup_b99afcdd74539f1800a7e897944f66df.setContent(html_83f85a13e7dd91ba6709bd11276d167f);
+            
+        
+
+        marker_41f50cd95c2c2665b2578cc72376924e.bindPopup(popup_b99afcdd74539f1800a7e897944f66df)
+        ;
+
+        
+    
+    
+            var marker_d0ffe6167d2e45bb0ecfc5b1570edfe5 = L.marker(
+                [34.3882, 132.4612],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_695a88d81bc8a0f9ecd03edcc708f7eb = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/japan/japan_640.png", "popupAnchor": [0, -80]});
+        marker_d0ffe6167d2e45bb0ecfc5b1570edfe5.setIcon(custom_icon_695a88d81bc8a0f9ecd03edcc708f7eb);
+        
+    
+        var popup_e0c348ff9ef359098c2d416d848932a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3677de9f784b6171748b75c6b9571425 = $(`<div id="html_3677de9f784b6171748b75c6b9571425" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Hiroshima Dreamination</h4><img src='https://i.imgur.com/i4RVUMD.jpg' alt="Hiroshima Dreamination"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;"></p></div>`)[0];
+                popup_e0c348ff9ef359098c2d416d848932a5.setContent(html_3677de9f784b6171748b75c6b9571425);
+            
+        
+
+        marker_d0ffe6167d2e45bb0ecfc5b1570edfe5.bindPopup(popup_e0c348ff9ef359098c2d416d848932a5)
+        ;
+
+        
+    
+    
+            var marker_fd223eed2a4015687956fe162c3fd79f = L.marker(
+                [34.2792, 132.3251],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_ea2e38d1225f3c5b8380cddc978107c0 = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/japan/japan_640.png", "popupAnchor": [0, -80]});
+        marker_fd223eed2a4015687956fe162c3fd79f.setIcon(custom_icon_ea2e38d1225f3c5b8380cddc978107c0);
+        
+    
+        var popup_8654d5f642635920625217776492822b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c222140f42ed84580d53d35bfb05e1a = $(`<div id="html_8c222140f42ed84580d53d35bfb05e1a" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Miyajima</h4><img src='https://i.imgur.com/QnYCUoG.jpg' alt="Miyajima"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;"></p></div>`)[0];
+                popup_8654d5f642635920625217776492822b.setContent(html_8c222140f42ed84580d53d35bfb05e1a);
+            
+        
+
+        marker_fd223eed2a4015687956fe162c3fd79f.bindPopup(popup_8654d5f642635920625217776492822b)
+        ;
+
+        
+    
+    
+            var marker_25dd669a87223cf79cad2d737c42cd37 = L.marker(
+                [36.5386, 128.517],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_f6bab5e0019bb2d319eba9c83bc15559 = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/korea_south/korea_south_640.png", "popupAnchor": [0, -80]});
+        marker_25dd669a87223cf79cad2d737c42cd37.setIcon(custom_icon_f6bab5e0019bb2d319eba9c83bc15559);
+        
+    
+        var popup_efb60aeab983d7124675e3ab27a97806 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b6b1e4cad2ae41de180c272a192d098 = $(`<div id="html_2b6b1e4cad2ae41de180c272a192d098" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Hahoe Folk Village</h4><img src='https://i.imgur.com/3tDDosH.jpg' alt="Hahoe Folk Village"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;"></p></div>`)[0];
+                popup_efb60aeab983d7124675e3ab27a97806.setContent(html_2b6b1e4cad2ae41de180c272a192d098);
+            
+        
+
+        marker_25dd669a87223cf79cad2d737c42cd37.bindPopup(popup_efb60aeab983d7124675e3ab27a97806)
+        ;
+
+        
+    
+    
+            var marker_8cd6dc13e82a015da881383d6d908dca = L.marker(
+                [37.91671648025547, 126.69829308650752],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_caa9df9ada724897ac8a5d9272368393 = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/korea_south/korea_south_640.png", "popupAnchor": [0, -80]});
+        marker_8cd6dc13e82a015da881383d6d908dca.setIcon(custom_icon_caa9df9ada724897ac8a5d9272368393);
+        
+    
+        var popup_1407a67b81e62b961e7a47b88389287d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b37f5fc67a50cd912ff4970b7a02ab01 = $(`<div id="html_b37f5fc67a50cd912ff4970b7a02ab01" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Third Infiltration Tunnel, DMZ</h4><img src='https://i.imgur.com/t4y01pG.jpg' alt="Third Infiltration Tunnel, DMZ"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;"></p></div>`)[0];
+                popup_1407a67b81e62b961e7a47b88389287d.setContent(html_b37f5fc67a50cd912ff4970b7a02ab01);
+            
+        
+
+        marker_8cd6dc13e82a015da881383d6d908dca.bindPopup(popup_1407a67b81e62b961e7a47b88389287d)
+        ;
+
+        
+    
+    
+            var marker_1d12467d89d5b4953ed14dfba9d53962 = L.marker(
+                [37.5828025947213, 126.98361926829193],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_dd85b16e9aa4213fb0f447457cca86c3 = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/korea_south/korea_south_640.png", "popupAnchor": [0, -80]});
+        marker_1d12467d89d5b4953ed14dfba9d53962.setIcon(custom_icon_dd85b16e9aa4213fb0f447457cca86c3);
+        
+    
+        var popup_3b81b74d0f3c121fbb518aaa588b5244 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f617a2a5596b1b17513b79aac2e683a9 = $(`<div id="html_f617a2a5596b1b17513b79aac2e683a9" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Bukchon Hanok Village</h4><img src='https://i.imgur.com/X9bGRho.jpg' alt="Bukchon Hanok Village"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;"></p></div>`)[0];
+                popup_3b81b74d0f3c121fbb518aaa588b5244.setContent(html_f617a2a5596b1b17513b79aac2e683a9);
+            
+        
+
+        marker_1d12467d89d5b4953ed14dfba9d53962.bindPopup(popup_3b81b74d0f3c121fbb518aaa588b5244)
+        ;
+
+        
+    
+    
+            var marker_f67ee0e5ee2a0a726a2c5ee7e4b0b127 = L.marker(
+                [43.6354, -79.4136],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_9c8039af513d390963cc7cf7c0b46c19 = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/canada/canada_640.png", "popupAnchor": [0, -80]});
+        marker_f67ee0e5ee2a0a726a2c5ee7e4b0b127.setIcon(custom_icon_9c8039af513d390963cc7cf7c0b46c19);
+        
+    
+        var popup_6e9730d6f634bf185b0200463b16c0db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_478116188d4836422666d26987528251 = $(`<div id="html_478116188d4836422666d26987528251" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">The Ex</h4><img src='https://i.imgur.com/OinvUP5.jpg' alt="The Ex"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;"></p></div>`)[0];
+                popup_6e9730d6f634bf185b0200463b16c0db.setContent(html_478116188d4836422666d26987528251);
+            
+        
+
+        marker_f67ee0e5ee2a0a726a2c5ee7e4b0b127.bindPopup(popup_6e9730d6f634bf185b0200463b16c0db)
+        ;
+
+        
+    
+    
+            var marker_7aa99c6f472e697a50af851c8265db4e = L.marker(
+                [43.66977878442531, -79.38867336311971],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_d87a335847b4a0172b2847a93ead9a91 = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/canada/canada_640.png", "popupAnchor": [0, -80]});
+        marker_7aa99c6f472e697a50af851c8265db4e.setIcon(custom_icon_d87a335847b4a0172b2847a93ead9a91);
+        
+    
+        var popup_eade439109f1ad42ecb1f68bf985bbe3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5f36a66ab95fa1e9f9ae1171dc38745 = $(`<div id="html_d5f36a66ab95fa1e9f9ae1171dc38745" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Eataly</h4><img src='https://i.imgur.com/NOLqlIJ.jpg' alt="Eataly"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;"></p></div>`)[0];
+                popup_eade439109f1ad42ecb1f68bf985bbe3.setContent(html_d5f36a66ab95fa1e9f9ae1171dc38745);
+            
+        
+
+        marker_7aa99c6f472e697a50af851c8265db4e.bindPopup(popup_eade439109f1ad42ecb1f68bf985bbe3)
+        ;
+
+        
+    
+    
+            var marker_5e01942511a4ac72b8d82e758218da61 = L.marker(
+                [43.640947, -79.389594],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_986a82f4599b889f9e54b668f05bd99a = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/canada/canada_640.png", "popupAnchor": [0, -80]});
+        marker_5e01942511a4ac72b8d82e758218da61.setIcon(custom_icon_986a82f4599b889f9e54b668f05bd99a);
+        
+    
+        var popup_e6e3a82713a8be6f6bb5dd2bf0bee666 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_080b757f148994224ed97bb31200ec90 = $(`<div id="html_080b757f148994224ed97bb31200ec90" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">SkyDome</h4><img src='https://i.imgur.com/LIf3OMh.jpg' alt="SkyDome"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;"></p></div>`)[0];
+                popup_e6e3a82713a8be6f6bb5dd2bf0bee666.setContent(html_080b757f148994224ed97bb31200ec90);
+            
+        
+
+        marker_5e01942511a4ac72b8d82e758218da61.bindPopup(popup_e6e3a82713a8be6f6bb5dd2bf0bee666)
+        ;
+
+        
+    
+    
+            var marker_1c25dc088f198cb9e9172c4e86e86b1b = L.marker(
+                [44.526464496121, -80.35017367446154],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_4fce5a0d09fec21b21c64cafb8c77636 = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/canada/canada_640.png", "popupAnchor": [0, -80]});
+        marker_1c25dc088f198cb9e9172c4e86e86b1b.setIcon(custom_icon_4fce5a0d09fec21b21c64cafb8c77636);
+        
+    
+        var popup_4127839c8c0d50bfc1ba4fa01b856a14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_888e344f24c3c319b06b91e4b9236ae2 = $(`<div id="html_888e344f24c3c319b06b91e4b9236ae2" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Belmanor</h4><img src='https://i.imgur.com/OlHUw0d.jpg' alt="Belmanor"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;"></p></div>`)[0];
+                popup_4127839c8c0d50bfc1ba4fa01b856a14.setContent(html_888e344f24c3c319b06b91e4b9236ae2);
+            
+        
+
+        marker_1c25dc088f198cb9e9172c4e86e86b1b.bindPopup(popup_4127839c8c0d50bfc1ba4fa01b856a14)
+        ;
+
+        
+    
+    
+            var marker_ce50e2cc75137afbac02e4ca74c7fc3c = L.marker(
+                [34.862678, -111.785881],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_ad9347437714215cd42420f23c8b6e35 = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/united_states_of_america/united_states_of_america_640.png", "popupAnchor": [0, -80]});
+        marker_ce50e2cc75137afbac02e4ca74c7fc3c.setIcon(custom_icon_ad9347437714215cd42420f23c8b6e35);
+        
+    
+        var popup_1d0a6731c312bc633c3502f093051c15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58cf44ae30c73c00e915aa60b97c3247 = $(`<div id="html_58cf44ae30c73c00e915aa60b97c3247" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">The Melting Point</h4><img src='https://i.imgur.com/YaMTx4v.jpg' alt="The Melting Point"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;"></p></div>`)[0];
+                popup_1d0a6731c312bc633c3502f093051c15.setContent(html_58cf44ae30c73c00e915aa60b97c3247);
+            
+        
+
+        marker_ce50e2cc75137afbac02e4ca74c7fc3c.bindPopup(popup_1d0a6731c312bc633c3502f093051c15)
+        ;
+
+        
+    
+    
+            var marker_4088fd2251a2c73752c9da4c730b139b = L.marker(
+                [40.782936, -73.959124],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_14f788d6f414150f3e18c253acb54a84 = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/united_states_of_america/united_states_of_america_640.png", "popupAnchor": [0, -80]});
+        marker_4088fd2251a2c73752c9da4c730b139b.setIcon(custom_icon_14f788d6f414150f3e18c253acb54a84);
+        
+    
+        var popup_9c429d9fa7becef21779b940962bdf23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_733387a564933497cf9b8ed2ad110628 = $(`<div id="html_733387a564933497cf9b8ed2ad110628" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">The Guggenheim</h4><img src='https://i.imgur.com/MbSRl11.jpg' alt="The Guggenheim"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;"></p></div>`)[0];
+                popup_9c429d9fa7becef21779b940962bdf23.setContent(html_733387a564933497cf9b8ed2ad110628);
+            
+        
+
+        marker_4088fd2251a2c73752c9da4c730b139b.bindPopup(popup_9c429d9fa7becef21779b940962bdf23)
+        ;
+
+        
+    
+    
+            var marker_44cb567361d4452b87d7ea3a06aaddd3 = L.marker(
+                [44.51520990123986, -80.35446874749427],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_5800f3867071b65d68317657e1f1fc2d = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/canada/canada_640.png", "popupAnchor": [0, -80]});
+        marker_44cb567361d4452b87d7ea3a06aaddd3.setIcon(custom_icon_5800f3867071b65d68317657e1f1fc2d);
+        
+    
+        var popup_2c57a4897e4aad39cb47901be3da076b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b691d8ccc9082f391bfa7125368b3602 = $(`<div id="html_b691d8ccc9082f391bfa7125368b3602" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Alpine</h4><img src='https://i.imgur.com/EY1OCO4.jpg' alt="Alpine"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;"></p></div>`)[0];
+                popup_2c57a4897e4aad39cb47901be3da076b.setContent(html_b691d8ccc9082f391bfa7125368b3602);
+            
+        
+
+        marker_44cb567361d4452b87d7ea3a06aaddd3.bindPopup(popup_2c57a4897e4aad39cb47901be3da076b)
+        ;
+
+        
+    
+    
+            var marker_8bb2faef26999123578c5580b808c0e9 = L.marker(
+                [35.2555, 139.156],
+                {}
+            ).addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+        var custom_icon_f0bac443bfe9d160f41e9685226d46ff = L.icon({"iconAnchor": [50, 90], "iconSize": [100, 100], "iconUrl": "https://img.freeflagicons.com/thumb/round_pin_icon/japan/japan_640.png", "popupAnchor": [0, -80]});
+        marker_8bb2faef26999123578c5580b808c0e9.setIcon(custom_icon_f0bac443bfe9d160f41e9685226d46ff);
+        
+    
+        var popup_d65b9a4d689066fa2e854106d514fead = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db51d49c211c7e67314d7b8b6e547de3 = $(`<div id="html_db51d49c211c7e67314d7b8b6e547de3" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Odawara Station</h4><img src='https://i.imgur.com/yEGPE79.jpg' alt="Odawara Station"style="max-width:200px;"><p style="text-align: center; font-family: garamond; font-size: 14px;"></p></div>`)[0];
+                popup_d65b9a4d689066fa2e854106d514fead.setContent(html_db51d49c211c7e67314d7b8b6e547de3);
+            
+        
+
+        marker_8bb2faef26999123578c5580b808c0e9.bindPopup(popup_d65b9a4d689066fa2e854106d514fead)
+        ;
+
+        
+    
+    
+            tile_layer_2d711d623b1f3c7ac1c1445b10524713.addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+    
+            tile_layer_f7d5ebdc475e8f48a802bd25a18f7c46.addTo(map_b2f73be1dcadcdec2955e7feb05917ad);
+        
+</script>
+</html>
