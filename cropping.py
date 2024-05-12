@@ -1,11 +1,11 @@
 from PIL import Image
 
-countries = ['canada', 'korea_south', 'japan', 'united_states_of_america']
-for country in countries:
-    img = Image.open(f"original_images/{country}_640.png")
+countries = {'canada': 'ca', 'korea_south': 'kr', 'japan': 'jp', 'united_states_of_america': 'us',}
+for country, code in countries.items():
+    img = Image.open(f"original_marker_images/{country}_640.png")
     left = 188
     right = img.width - 204
     top = 20
     bottom = img.height - 45
     cropped_img = img.crop((left, top, right, bottom))
-    cropped_img.save(f"cropped_images/{country}.png")
+    cropped_img.save(f"cropped_marker_images/{code}.png")
