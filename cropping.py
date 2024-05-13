@@ -12,6 +12,7 @@ countries = {
     'russia': 'ru',
     'united_arab_emirates': 'ae',
     'china': 'cn',
+    'united_kingdom': 'uk',
     }
 for country, code in countries.items():
     img = Image.open(f"original_marker_images/{country}_640.png")
