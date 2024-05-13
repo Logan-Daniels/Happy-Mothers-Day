@@ -13,6 +13,13 @@ countries = {
     'united_arab_emirates': 'ae',
     'china': 'cn',
     'united_kingdom': 'uk',
+    'israel': 'il',
+    'south_africa': 'za',
+    'greece': 'gr',
+    'france': 'fr',
+    'zimbabwe': 'zi',
+    'antarctica': 'aq',
+    'argentina': 'ar',
     }
 for country, code in countries.items():
     img = Image.open(f"original_marker_images/{country}_640.png")
