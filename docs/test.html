@@ -1,0 +1,13 @@
+<style>.slideshow {position: relative; animation: fadeInFromLeft 1.5s ease;} .image__container {position: absolute; top: 0; left: 0; border-radius: 10px; opacity: 0; transition: opacity 1s ease-in-out;}.image__container.active {opacity: 1;}</style> <div class="slideshow">
+<div class="image__container">
+    <img src="https://avatars.githubusercontent.com/u/12371363?v=4" alt="Indoor">        
+</div>
+<div class="image__container">
+    <img src="https://avatars.githubusercontent.com/u/1493671?v=4" alt="Indoor">        
+</div>
+<div class="image__container">
+    <img src=https://avatars.githubusercontent.com/u/11975561?v=4" alt="Indoor">        
+</div>
+</div>
+
+<script>let slideIndex = 0; showSlides(); function showSlides() {const slides = document.getElementsByClassName('image__container'); for (let i = 0; i < slides.length; i++) {slides[i].classList.remove('active');} slideIndex++; if (slideIndex > slides.length) {slideIndex = 1;} slides[slideIndex - 1].classList.add('active'); setTimeout(showSlides, 3000);}</script>
