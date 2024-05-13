@@ -21,10 +21,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_ac2eedcafd6a566707f9735602004d3a {
+                #map_c5b74dcaca8b95c81944b96c57f348cb {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -38,14 +39,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_ac2eedcafd6a566707f9735602004d3a" ></div>
+            <div class="folium-map" id="map_c5b74dcaca8b95c81944b96c57f348cb" ></div>
         
 </body>
 <script>
     
     
-            var map_ac2eedcafd6a566707f9735602004d3a = L.map(
-                "map_ac2eedcafd6a566707f9735602004d3a",
+            var map_c5b74dcaca8b95c81944b96c57f348cb = L.map(
+                "map_c5b74dcaca8b95c81944b96c57f348cb",
                 {
                     center: [43.66977878442531, -79.38867336311971],
                     crs: L.CRS.EPSG3857,
@@ -60,559 +61,603 @@
 
         
     
-            var tile_layer_c411ab9cd357b4852d2644281ff37640 = L.tileLayer(
+            var tile_layer_d2fae6bf6be47989bbab345ace0f430c = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 2, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_c411ab9cd357b4852d2644281ff37640.addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            tile_layer_d2fae6bf6be47989bbab345ace0f430c.addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-            var tile_layer_4aaffef615c00558ce691a34fedecb7f = L.tileLayer(
+            var tile_layer_d6c327329e6c1706671f2f34569a4aa3 = L.tileLayer(
                 "https://api.mapbox.com/styles/v1/logandaniels/cluryho1d01wt01pbdqtxdp21/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibG9nYW5kYW5pZWxzIiwiYSI6ImNsdjcwdnhlMjA1YzUya3F2dGp0cmFnODMifQ.2teVRrVZqnhsExw4jpw65w",
                 {"attribution": " ", "detectRetina": true, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": "2", "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_4aaffef615c00558ce691a34fedecb7f.addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            tile_layer_d6c327329e6c1706671f2f34569a4aa3.addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-            var marker_923fdb2d2894b934d87fdd3d7e633bd2 = L.marker(
+            var marker_ba5cdfe08520c90d51fe77828ba5c96c = L.marker(
                 [43.706843167968444, -79.43343763536379],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_92d93e8e5dfb42da2f7eed133e7359dc = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/canada.png", "popupAnchor": [0, -100]});
-        marker_923fdb2d2894b934d87fdd3d7e633bd2.setIcon(custom_icon_92d93e8e5dfb42da2f7eed133e7359dc);
+        var custom_icon_042b3c8f67b421be877d3d26a0a43d22 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/ca.png", "popupAnchor": [0, -100]});
+        marker_ba5cdfe08520c90d51fe77828ba5c96c.setIcon(custom_icon_042b3c8f67b421be877d3d26a0a43d22);
         
     
-        var popup_bc6be54a61d3f2d631080ae5605ff92e = L.popup({"maxWidth": "100%"});
+        var popup_06f38617d2fdea296a28b9eb12ec1296 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_4e16af808821aa24c00c88d70c5d8132 = $(`<div id="html_4e16af808821aa24c00c88d70c5d8132" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">720 Briar Hill Ave</h4><img src='https://i.imgur.com/qHeXMDn.jpg' alt="720 Briar Hill Ave"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;">Your travelling spirit seems to have rubbed off on me</p></div>`)[0];
-                popup_bc6be54a61d3f2d631080ae5605ff92e.setContent(html_4e16af808821aa24c00c88d70c5d8132);
+                var html_cb839f47c46c229ae73953cdd6e6eda9 = $(`<div id="html_cb839f47c46c229ae73953cdd6e6eda9" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">720 Briar Hill Ave</h4><iframe src="../../slideshows/720_briar_hill_ave.html" height = "250 px"></iframe><p style = "text-align: center; font-family: streetwear; font-size: 14px;">Your travelling spirit seems to have rubbed off on me</p></div>`)[0];
+                popup_06f38617d2fdea296a28b9eb12ec1296.setContent(html_cb839f47c46c229ae73953cdd6e6eda9);
             
         
 
-        marker_923fdb2d2894b934d87fdd3d7e633bd2.bindPopup(popup_bc6be54a61d3f2d631080ae5605ff92e)
+        marker_ba5cdfe08520c90d51fe77828ba5c96c.bindPopup(popup_06f38617d2fdea296a28b9eb12ec1296)
         ;
 
         
     
     
-            var marker_31e9caec2cd585ff19f40b31eb5ebdac = L.marker(
+            var marker_320f7a0e1aaccba719e764aeb40dbf4a = L.marker(
                 [44.06580278508552, -77.91405655898555],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_f9fb5a58e9040142d146ae028e0638a8 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/canada.png", "popupAnchor": [0, -100]});
-        marker_31e9caec2cd585ff19f40b31eb5ebdac.setIcon(custom_icon_f9fb5a58e9040142d146ae028e0638a8);
+        var custom_icon_011c37284a233687f78c6f9c00df1656 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/ca.png", "popupAnchor": [0, -100]});
+        marker_320f7a0e1aaccba719e764aeb40dbf4a.setIcon(custom_icon_011c37284a233687f78c6f9c00df1656);
         
     
-        var popup_cd37e1d48552dd2f1859f3a457c9682a = L.popup({"maxWidth": "100%"});
+        var popup_744c57993c08726f249a80d78373864b = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_4f48bbda6ed72f0a4d4030df65ad85bc = $(`<div id="html_4f48bbda6ed72f0a4d4030df65ad85bc" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">The Big Apple</h4><img src='https://i.imgur.com/ly25nux.jpg' alt="The Big Apple"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;">Quite a LOVEly roadside attraction</p></div>`)[0];
-                popup_cd37e1d48552dd2f1859f3a457c9682a.setContent(html_4f48bbda6ed72f0a4d4030df65ad85bc);
+                var html_ab69ff577d6739cbf132a021b48d1acb = $(`<div id="html_ab69ff577d6739cbf132a021b48d1acb" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">The Big Apple</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/the_big_apple.jpg?raw=true"alt = "The Big Apple"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;">Quite a LOVEly roadside attraction</p></div>`)[0];
+                popup_744c57993c08726f249a80d78373864b.setContent(html_ab69ff577d6739cbf132a021b48d1acb);
             
         
 
-        marker_31e9caec2cd585ff19f40b31eb5ebdac.bindPopup(popup_cd37e1d48552dd2f1859f3a457c9682a)
+        marker_320f7a0e1aaccba719e764aeb40dbf4a.bindPopup(popup_744c57993c08726f249a80d78373864b)
         ;
 
         
     
     
-            var marker_c7de813e42cacaa33ed36e7505a10de7 = L.marker(
+            var marker_d13a2e4c1538ec13da01007fd3449279 = L.marker(
                 [35.7119, 139.7928],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_59278b09bdc53f5c8211824d13df1bce = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/japan.png", "popupAnchor": [0, -100]});
-        marker_c7de813e42cacaa33ed36e7505a10de7.setIcon(custom_icon_59278b09bdc53f5c8211824d13df1bce);
+        var custom_icon_8a965b2498dcad182c4ccd4c2936014f = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/jp.png", "popupAnchor": [0, -100]});
+        marker_d13a2e4c1538ec13da01007fd3449279.setIcon(custom_icon_8a965b2498dcad182c4ccd4c2936014f);
         
     
-        var popup_cd1e89fa4e956768ccb4458e02a3d5ed = L.popup({"maxWidth": "100%"});
+        var popup_2c95d9be8468640ff5e8aad6f99d893d = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_f45996469bccba51f056d5c7e7e563e4 = $(`<div id="html_f45996469bccba51f056d5c7e7e563e4" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Tea Ceremony</h4><img src='https://i.imgur.com/W7Po077.jpg' alt="Tea Ceremony"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;">You can really pull off a kimono!</p></div>`)[0];
-                popup_cd1e89fa4e956768ccb4458e02a3d5ed.setContent(html_f45996469bccba51f056d5c7e7e563e4);
+                var html_078de7d57b0ac653054453aa58ec69e9 = $(`<div id="html_078de7d57b0ac653054453aa58ec69e9" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">Tea Ceremony</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/tea_ceremony.jpg?raw=true"alt = "Tea Ceremony"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;">You can really pull off a kimono!</p></div>`)[0];
+                popup_2c95d9be8468640ff5e8aad6f99d893d.setContent(html_078de7d57b0ac653054453aa58ec69e9);
             
         
 
-        marker_c7de813e42cacaa33ed36e7505a10de7.bindPopup(popup_cd1e89fa4e956768ccb4458e02a3d5ed)
+        marker_d13a2e4c1538ec13da01007fd3449279.bindPopup(popup_2c95d9be8468640ff5e8aad6f99d893d)
         ;
 
         
     
     
-            var marker_545607001e6d280e22e90dccf5dae07f = L.marker(
+            var marker_27c22e29deb629ca79c0a2f154dafeee = L.marker(
                 [35.7094, 139.8086],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_d5013f45ec6ce925bce58245effd881e = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/japan.png", "popupAnchor": [0, -100]});
-        marker_545607001e6d280e22e90dccf5dae07f.setIcon(custom_icon_d5013f45ec6ce925bce58245effd881e);
+        var custom_icon_f277943a5ea7a33587f1d84cd2be6cf1 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/jp.png", "popupAnchor": [0, -100]});
+        marker_27c22e29deb629ca79c0a2f154dafeee.setIcon(custom_icon_f277943a5ea7a33587f1d84cd2be6cf1);
         
     
-        var popup_d82d16c630cc2f348c3527faf04b8345 = L.popup({"maxWidth": "100%"});
+        var popup_106e1c6f79cbc75eada2873d71fa29a2 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_7e1ca600b8c00145e9b2c7784a9110b3 = $(`<div id="html_7e1ca600b8c00145e9b2c7784a9110b3" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Tokyo Skytree</h4><img src='https://i.imgur.com/g5xFE4w.jpg' alt="Tokyo Skytree"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;">I love you more than corn soup</p></div>`)[0];
-                popup_d82d16c630cc2f348c3527faf04b8345.setContent(html_7e1ca600b8c00145e9b2c7784a9110b3);
+                var html_e3d05efcb2a6330de65a2006a1eb9e82 = $(`<div id="html_e3d05efcb2a6330de65a2006a1eb9e82" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">Tokyo Skytree</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/tokyo_skytree.jpg?raw=true"alt = "Tokyo Skytree"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;">I love you more than corn soup</p></div>`)[0];
+                popup_106e1c6f79cbc75eada2873d71fa29a2.setContent(html_e3d05efcb2a6330de65a2006a1eb9e82);
             
         
 
-        marker_545607001e6d280e22e90dccf5dae07f.bindPopup(popup_d82d16c630cc2f348c3527faf04b8345)
+        marker_27c22e29deb629ca79c0a2f154dafeee.bindPopup(popup_106e1c6f79cbc75eada2873d71fa29a2)
         ;
 
         
     
     
-            var marker_e695161cb5dd82e6ce39c8cb6d9881cc = L.marker(
+            var marker_f635b15eb5a1ec98b4c5479d91f3f6fb = L.marker(
                 [35.2562, 139.048],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_07cc050864c9e997d449c5cb1d7322ae = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/japan.png", "popupAnchor": [0, -100]});
-        marker_e695161cb5dd82e6ce39c8cb6d9881cc.setIcon(custom_icon_07cc050864c9e997d449c5cb1d7322ae);
+        var custom_icon_56e37f46a43918e67051b30c0b70acc6 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/jp.png", "popupAnchor": [0, -100]});
+        marker_f635b15eb5a1ec98b4c5479d91f3f6fb.setIcon(custom_icon_56e37f46a43918e67051b30c0b70acc6);
         
     
-        var popup_686d356f02ade6e7c67350cea5cb6ce1 = L.popup({"maxWidth": "100%"});
+        var popup_5b3bb8464c3d33284fa98be574bd0e0e = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_033f88210588ff335db44cdcfda4eab7 = $(`<div id="html_033f88210588ff335db44cdcfda4eab7" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Box Burger</h4><img src='https://i.imgur.com/jlhhitN.jpg' alt="Box Burger"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;">This photo is really sweet</p></div>`)[0];
-                popup_686d356f02ade6e7c67350cea5cb6ce1.setContent(html_033f88210588ff335db44cdcfda4eab7);
+                var html_afbc05aed8b9050d9050f7863e0fc076 = $(`<div id="html_afbc05aed8b9050d9050f7863e0fc076" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">Box Burger</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/box_burger.jpg?raw=true"alt = "Box Burger"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;">This photo is really sweet</p></div>`)[0];
+                popup_5b3bb8464c3d33284fa98be574bd0e0e.setContent(html_afbc05aed8b9050d9050f7863e0fc076);
             
         
 
-        marker_e695161cb5dd82e6ce39c8cb6d9881cc.bindPopup(popup_686d356f02ade6e7c67350cea5cb6ce1)
+        marker_f635b15eb5a1ec98b4c5479d91f3f6fb.bindPopup(popup_5b3bb8464c3d33284fa98be574bd0e0e)
         ;
 
         
     
     
-            var marker_7f10fafae6985f36327b4a0e355cf8d6 = L.marker(
+            var marker_e23059a37019fe186ad3177838d06f1b = L.marker(
                 [34.9946, 135.7854],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_b45329170567b106afbde899a02d8fb4 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/japan.png", "popupAnchor": [0, -100]});
-        marker_7f10fafae6985f36327b4a0e355cf8d6.setIcon(custom_icon_b45329170567b106afbde899a02d8fb4);
+        var custom_icon_b09845a6407ac6552046613f01b56afd = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/jp.png", "popupAnchor": [0, -100]});
+        marker_e23059a37019fe186ad3177838d06f1b.setIcon(custom_icon_b09845a6407ac6552046613f01b56afd);
         
     
-        var popup_fe03f46e786e04c3ac2bfae7d71c83c1 = L.popup({"maxWidth": "100%"});
+        var popup_e5bc69a81ca2c55764e8b9e8e5a02d13 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_942b68933d85ed7d08d48d6ee610400b = $(`<div id="html_942b68933d85ed7d08d48d6ee610400b" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Kiyomizu-dera</h4><img src='https://i.imgur.com/Npa3uYv.jpg' alt="Kiyomizu-dera"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
-                popup_fe03f46e786e04c3ac2bfae7d71c83c1.setContent(html_942b68933d85ed7d08d48d6ee610400b);
+                var html_4f79e7c6fbe301ecf97f597f642f2077 = $(`<div id="html_4f79e7c6fbe301ecf97f597f642f2077" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">Kiyomizu-dera</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/kiyomizu-dera.jpg?raw=true"alt = "Kiyomizu-dera"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
+                popup_e5bc69a81ca2c55764e8b9e8e5a02d13.setContent(html_4f79e7c6fbe301ecf97f597f642f2077);
             
         
 
-        marker_7f10fafae6985f36327b4a0e355cf8d6.bindPopup(popup_fe03f46e786e04c3ac2bfae7d71c83c1)
+        marker_e23059a37019fe186ad3177838d06f1b.bindPopup(popup_e5bc69a81ca2c55764e8b9e8e5a02d13)
         ;
 
         
     
     
-            var marker_3e141c814fa653bfdd61d2d0862c8cbd = L.marker(
+            var marker_0fc1174937faf383a958446e0a3b2a54 = L.marker(
                 [34.9974, 135.7811],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_9ae77e94b4c583d60b934a83c74b3c46 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/japan.png", "popupAnchor": [0, -100]});
-        marker_3e141c814fa653bfdd61d2d0862c8cbd.setIcon(custom_icon_9ae77e94b4c583d60b934a83c74b3c46);
+        var custom_icon_4d87a0f301acbd4d88344321986792fd = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/jp.png", "popupAnchor": [0, -100]});
+        marker_0fc1174937faf383a958446e0a3b2a54.setIcon(custom_icon_4d87a0f301acbd4d88344321986792fd);
         
     
-        var popup_0164833861e357014fc71b4a1a38d306 = L.popup({"maxWidth": "100%"});
+        var popup_36bbbbbd743c8df8f4b87e3e087ce39f = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_07654ba90a164071600bff00786e1167 = $(`<div id="html_07654ba90a164071600bff00786e1167" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Masuyacho</h4><img src='https://i.imgur.com/RO81Kc8.jpg' alt="Masuyacho"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
-                popup_0164833861e357014fc71b4a1a38d306.setContent(html_07654ba90a164071600bff00786e1167);
+                var html_584d527a8a86d4ed0a1cfa1944e66927 = $(`<div id="html_584d527a8a86d4ed0a1cfa1944e66927" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">Masuyacho</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/masuyacho.jpg?raw=true"alt = "Masuyacho"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
+                popup_36bbbbbd743c8df8f4b87e3e087ce39f.setContent(html_584d527a8a86d4ed0a1cfa1944e66927);
             
         
 
-        marker_3e141c814fa653bfdd61d2d0862c8cbd.bindPopup(popup_0164833861e357014fc71b4a1a38d306)
+        marker_0fc1174937faf383a958446e0a3b2a54.bindPopup(popup_36bbbbbd743c8df8f4b87e3e087ce39f)
         ;
 
         
     
     
-            var marker_17a5fa9cda06b06d0fcc18f4379375f2 = L.marker(
+            var marker_76cdd19ddadceb602f1315b990f0f627 = L.marker(
                 [34.3882, 132.4612],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_0ebc515aa9818c7ac51307a275764ee3 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/japan.png", "popupAnchor": [0, -100]});
-        marker_17a5fa9cda06b06d0fcc18f4379375f2.setIcon(custom_icon_0ebc515aa9818c7ac51307a275764ee3);
+        var custom_icon_056b50d6243bfd7c63b2375d5a1b17d7 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/jp.png", "popupAnchor": [0, -100]});
+        marker_76cdd19ddadceb602f1315b990f0f627.setIcon(custom_icon_056b50d6243bfd7c63b2375d5a1b17d7);
         
     
-        var popup_ff3b75ca1e2265e6388730189198a9b1 = L.popup({"maxWidth": "100%"});
+        var popup_b64cc2fbe5688f0cf45f38ccdb4d2d5f = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_f4b85e19655fa941af9b1d83efbb15b9 = $(`<div id="html_f4b85e19655fa941af9b1d83efbb15b9" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Hiroshima Dreamination</h4><img src='https://i.imgur.com/i4RVUMD.jpg' alt="Hiroshima Dreamination"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
-                popup_ff3b75ca1e2265e6388730189198a9b1.setContent(html_f4b85e19655fa941af9b1d83efbb15b9);
+                var html_10689fb3c4f2f8b646ce39a475d86e58 = $(`<div id="html_10689fb3c4f2f8b646ce39a475d86e58" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">Hiroshima Dreamination</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/hiroshima_dreamination.jpg?raw=true"alt = "Hiroshima Dreamination"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
+                popup_b64cc2fbe5688f0cf45f38ccdb4d2d5f.setContent(html_10689fb3c4f2f8b646ce39a475d86e58);
             
         
 
-        marker_17a5fa9cda06b06d0fcc18f4379375f2.bindPopup(popup_ff3b75ca1e2265e6388730189198a9b1)
+        marker_76cdd19ddadceb602f1315b990f0f627.bindPopup(popup_b64cc2fbe5688f0cf45f38ccdb4d2d5f)
         ;
 
         
     
     
-            var marker_4f592aa1a9dda788198a3574282a981e = L.marker(
+            var marker_03b9960547f5926e085593c901697e6c = L.marker(
                 [34.2792, 132.3251],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_855faaf14e0c4125946e1e8514f0695e = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/japan.png", "popupAnchor": [0, -100]});
-        marker_4f592aa1a9dda788198a3574282a981e.setIcon(custom_icon_855faaf14e0c4125946e1e8514f0695e);
+        var custom_icon_3fe81c99fcf17e7ff8362940a07f47a7 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/jp.png", "popupAnchor": [0, -100]});
+        marker_03b9960547f5926e085593c901697e6c.setIcon(custom_icon_3fe81c99fcf17e7ff8362940a07f47a7);
         
     
-        var popup_36a9d69c43132380cad575246c72b62a = L.popup({"maxWidth": "100%"});
+        var popup_4dbe3db389b1172582f562453fe0a5cc = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_69871fdef92796365569ae883367cb8a = $(`<div id="html_69871fdef92796365569ae883367cb8a" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Miyajima</h4><img src='https://i.imgur.com/QnYCUoG.jpg' alt="Miyajima"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
-                popup_36a9d69c43132380cad575246c72b62a.setContent(html_69871fdef92796365569ae883367cb8a);
+                var html_baa3750d9c8b99cbcf4ebc834d216432 = $(`<div id="html_baa3750d9c8b99cbcf4ebc834d216432" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">Miyajima</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/miyajima.jpg?raw=true"alt = "Miyajima"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
+                popup_4dbe3db389b1172582f562453fe0a5cc.setContent(html_baa3750d9c8b99cbcf4ebc834d216432);
             
         
 
-        marker_4f592aa1a9dda788198a3574282a981e.bindPopup(popup_36a9d69c43132380cad575246c72b62a)
+        marker_03b9960547f5926e085593c901697e6c.bindPopup(popup_4dbe3db389b1172582f562453fe0a5cc)
         ;
 
         
     
     
-            var marker_789cecee01ced7b0f2647873bc4eb5d0 = L.marker(
+            var marker_aec819b1719bca428694d91d3c8a1139 = L.marker(
                 [36.5386, 128.517],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_8ea3fbeed3bc492c48f853ec6525193a = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/korea_south.png", "popupAnchor": [0, -100]});
-        marker_789cecee01ced7b0f2647873bc4eb5d0.setIcon(custom_icon_8ea3fbeed3bc492c48f853ec6525193a);
+        var custom_icon_353c652c3fcd7a0c85648dc620e6170d = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/kr.png", "popupAnchor": [0, -100]});
+        marker_aec819b1719bca428694d91d3c8a1139.setIcon(custom_icon_353c652c3fcd7a0c85648dc620e6170d);
         
     
-        var popup_e57fc766e667265af2b820348ec8d4fe = L.popup({"maxWidth": "100%"});
+        var popup_b371c3fe83d499186a2adde14c0ffaa2 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_a0a37b31b99d56fb8b349d19fadb5d62 = $(`<div id="html_a0a37b31b99d56fb8b349d19fadb5d62" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Hahoe Folk Village</h4><img src='https://i.imgur.com/3tDDosH.jpg' alt="Hahoe Folk Village"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
-                popup_e57fc766e667265af2b820348ec8d4fe.setContent(html_a0a37b31b99d56fb8b349d19fadb5d62);
+                var html_3537c2767fc895e9f301089f59f66d43 = $(`<div id="html_3537c2767fc895e9f301089f59f66d43" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">Hahoe Folk Village</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/hahoe_folk_village.jpg?raw=true"alt = "Hahoe Folk Village"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
+                popup_b371c3fe83d499186a2adde14c0ffaa2.setContent(html_3537c2767fc895e9f301089f59f66d43);
             
         
 
-        marker_789cecee01ced7b0f2647873bc4eb5d0.bindPopup(popup_e57fc766e667265af2b820348ec8d4fe)
+        marker_aec819b1719bca428694d91d3c8a1139.bindPopup(popup_b371c3fe83d499186a2adde14c0ffaa2)
         ;
 
         
     
     
-            var marker_13c521b1bc8be1d0686c3c2c960b9225 = L.marker(
+            var marker_8175607fe8ff6beeea631e84730cfe2b = L.marker(
                 [37.91671648025547, 126.69829308650752],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_5b836ba8df65777b936204c1e6559dbf = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/korea_south.png", "popupAnchor": [0, -100]});
-        marker_13c521b1bc8be1d0686c3c2c960b9225.setIcon(custom_icon_5b836ba8df65777b936204c1e6559dbf);
+        var custom_icon_934580d5d88f8f2157743b4e0a355ea3 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/kr.png", "popupAnchor": [0, -100]});
+        marker_8175607fe8ff6beeea631e84730cfe2b.setIcon(custom_icon_934580d5d88f8f2157743b4e0a355ea3);
         
     
-        var popup_a8501de42de9673904bbc13a6feed868 = L.popup({"maxWidth": "100%"});
+        var popup_08aeab9a044f6df711f62abe931c4482 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_cdd991f767f1a7065687fd07149d7b48 = $(`<div id="html_cdd991f767f1a7065687fd07149d7b48" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Third Infiltration Tunnel, DMZ</h4><img src='https://i.imgur.com/t4y01pG.jpg' alt="Third Infiltration Tunnel, DMZ"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
-                popup_a8501de42de9673904bbc13a6feed868.setContent(html_cdd991f767f1a7065687fd07149d7b48);
+                var html_284e251d37a852a16372b52fea137cb0 = $(`<div id="html_284e251d37a852a16372b52fea137cb0" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">Third Infiltration Tunnel, DMZ</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/third_infiltration_tunnel,_dmz.jpg?raw=true"alt = "Third Infiltration Tunnel, DMZ"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
+                popup_08aeab9a044f6df711f62abe931c4482.setContent(html_284e251d37a852a16372b52fea137cb0);
             
         
 
-        marker_13c521b1bc8be1d0686c3c2c960b9225.bindPopup(popup_a8501de42de9673904bbc13a6feed868)
+        marker_8175607fe8ff6beeea631e84730cfe2b.bindPopup(popup_08aeab9a044f6df711f62abe931c4482)
         ;
 
         
     
     
-            var marker_ea8558f5f55ed7868e7fab5104d5319f = L.marker(
+            var marker_7b93fa9713c83feba4e2fb2860f04e82 = L.marker(
                 [37.5828025947213, 126.98361926829193],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_bc1fc5fbaf0f40e81abf8edc8b653fcf = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/korea_south.png", "popupAnchor": [0, -100]});
-        marker_ea8558f5f55ed7868e7fab5104d5319f.setIcon(custom_icon_bc1fc5fbaf0f40e81abf8edc8b653fcf);
+        var custom_icon_cc1538ccb3979d70409327971bc040d8 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/kr.png", "popupAnchor": [0, -100]});
+        marker_7b93fa9713c83feba4e2fb2860f04e82.setIcon(custom_icon_cc1538ccb3979d70409327971bc040d8);
         
     
-        var popup_9581046135a9cce994144251224caac7 = L.popup({"maxWidth": "100%"});
+        var popup_86f9efc393a21ed738f5500b8692be5b = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_a049ba63d85bcd287c633a7a20f1c217 = $(`<div id="html_a049ba63d85bcd287c633a7a20f1c217" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Bukchon Hanok Village</h4><img src='https://i.imgur.com/X9bGRho.jpg' alt="Bukchon Hanok Village"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
-                popup_9581046135a9cce994144251224caac7.setContent(html_a049ba63d85bcd287c633a7a20f1c217);
+                var html_a182846d90a7d2e9f40c27cbc570a2ba = $(`<div id="html_a182846d90a7d2e9f40c27cbc570a2ba" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">Bukchon Hanok Village</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/bukchon_hanok_village.jpg?raw=true"alt = "Bukchon Hanok Village"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
+                popup_86f9efc393a21ed738f5500b8692be5b.setContent(html_a182846d90a7d2e9f40c27cbc570a2ba);
             
         
 
-        marker_ea8558f5f55ed7868e7fab5104d5319f.bindPopup(popup_9581046135a9cce994144251224caac7)
+        marker_7b93fa9713c83feba4e2fb2860f04e82.bindPopup(popup_86f9efc393a21ed738f5500b8692be5b)
         ;
 
         
     
     
-            var marker_345630e1d64b9bc2151c16b5e836a9b8 = L.marker(
+            var marker_8b6f7d702cb337a1fb4191e8a3ab21c8 = L.marker(
                 [43.6354, -79.4136],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_06234ec430fad6940002b0b658a741a4 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/canada.png", "popupAnchor": [0, -100]});
-        marker_345630e1d64b9bc2151c16b5e836a9b8.setIcon(custom_icon_06234ec430fad6940002b0b658a741a4);
+        var custom_icon_c3bc982ebf51b41d44ae94d0127e7e6b = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/ca.png", "popupAnchor": [0, -100]});
+        marker_8b6f7d702cb337a1fb4191e8a3ab21c8.setIcon(custom_icon_c3bc982ebf51b41d44ae94d0127e7e6b);
         
     
-        var popup_ab8620e09b753d278b637799b6598f95 = L.popup({"maxWidth": "100%"});
+        var popup_d39609c88d75d592e4b5840cc4ae3e54 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_ee79e2311186eb9d3b6bd847c00fb333 = $(`<div id="html_ee79e2311186eb9d3b6bd847c00fb333" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">The Ex</h4><img src='https://i.imgur.com/OinvUP5.jpg' alt="The Ex"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
-                popup_ab8620e09b753d278b637799b6598f95.setContent(html_ee79e2311186eb9d3b6bd847c00fb333);
+                var html_da28f96a1091d8ff0f6bab857a1ce445 = $(`<div id="html_da28f96a1091d8ff0f6bab857a1ce445" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">The Ex</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/the_ex.jpg?raw=true"alt = "The Ex"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
+                popup_d39609c88d75d592e4b5840cc4ae3e54.setContent(html_da28f96a1091d8ff0f6bab857a1ce445);
             
         
 
-        marker_345630e1d64b9bc2151c16b5e836a9b8.bindPopup(popup_ab8620e09b753d278b637799b6598f95)
+        marker_8b6f7d702cb337a1fb4191e8a3ab21c8.bindPopup(popup_d39609c88d75d592e4b5840cc4ae3e54)
         ;
 
         
     
     
-            var marker_29ce3b5171373b4e285b3c2773868dcc = L.marker(
+            var marker_6335103e37bdceebed591e682caf1e99 = L.marker(
                 [43.66977878442531, -79.38867336311971],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_e62a780366189af873a5701d37a74067 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/canada.png", "popupAnchor": [0, -100]});
-        marker_29ce3b5171373b4e285b3c2773868dcc.setIcon(custom_icon_e62a780366189af873a5701d37a74067);
+        var custom_icon_b6ebccfb1a149c6df053655aa8638601 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/ca.png", "popupAnchor": [0, -100]});
+        marker_6335103e37bdceebed591e682caf1e99.setIcon(custom_icon_b6ebccfb1a149c6df053655aa8638601);
         
     
-        var popup_f3b57b8067b82a3d31320708e6880a10 = L.popup({"maxWidth": "100%"});
+        var popup_d2b1f19e59b71291a47f50e028f62ac1 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_028148ac24ab81b90679fa4e4ddc4499 = $(`<div id="html_028148ac24ab81b90679fa4e4ddc4499" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Eataly</h4><img src='https://i.imgur.com/NOLqlIJ.jpg' alt="Eataly"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
-                popup_f3b57b8067b82a3d31320708e6880a10.setContent(html_028148ac24ab81b90679fa4e4ddc4499);
+                var html_5115d73dd2d381df4ccf814af697fbb2 = $(`<div id="html_5115d73dd2d381df4ccf814af697fbb2" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">Eataly</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/eataly.jpg?raw=true"alt = "Eataly"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
+                popup_d2b1f19e59b71291a47f50e028f62ac1.setContent(html_5115d73dd2d381df4ccf814af697fbb2);
             
         
 
-        marker_29ce3b5171373b4e285b3c2773868dcc.bindPopup(popup_f3b57b8067b82a3d31320708e6880a10)
+        marker_6335103e37bdceebed591e682caf1e99.bindPopup(popup_d2b1f19e59b71291a47f50e028f62ac1)
         ;
 
         
     
     
-            var marker_e31f6b57361fabb55575d2198c1d561d = L.marker(
+            var marker_683a6fdc1d8f4681a0da005b0d143eb2 = L.marker(
                 [43.640947, -79.389594],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_486a82a33e116fa66f8d1664f667bbc4 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/canada.png", "popupAnchor": [0, -100]});
-        marker_e31f6b57361fabb55575d2198c1d561d.setIcon(custom_icon_486a82a33e116fa66f8d1664f667bbc4);
+        var custom_icon_bf06711ecaf8ab32ef89d237b84e8c97 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/ca.png", "popupAnchor": [0, -100]});
+        marker_683a6fdc1d8f4681a0da005b0d143eb2.setIcon(custom_icon_bf06711ecaf8ab32ef89d237b84e8c97);
         
     
-        var popup_3e2b76d103715defce4061e0efe96c39 = L.popup({"maxWidth": "100%"});
+        var popup_3bcdeecc664afe1ca7fa04f2b9a94ca3 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_a628034f5c093116d1d6f2575972e00b = $(`<div id="html_a628034f5c093116d1d6f2575972e00b" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">SkyDome</h4><img src='https://i.imgur.com/LIf3OMh.jpg' alt="SkyDome"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
-                popup_3e2b76d103715defce4061e0efe96c39.setContent(html_a628034f5c093116d1d6f2575972e00b);
+                var html_b8d88ab87eed82a86166f8f2dea89ae7 = $(`<div id="html_b8d88ab87eed82a86166f8f2dea89ae7" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">SkyDome</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/skydome.jpg?raw=true"alt = "SkyDome"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
+                popup_3bcdeecc664afe1ca7fa04f2b9a94ca3.setContent(html_b8d88ab87eed82a86166f8f2dea89ae7);
             
         
 
-        marker_e31f6b57361fabb55575d2198c1d561d.bindPopup(popup_3e2b76d103715defce4061e0efe96c39)
+        marker_683a6fdc1d8f4681a0da005b0d143eb2.bindPopup(popup_3bcdeecc664afe1ca7fa04f2b9a94ca3)
         ;
 
         
     
     
-            var marker_a9620b6af24e703652e951f53fb8791a = L.marker(
+            var marker_2d58f05d26035fcc8a911203a212bb22 = L.marker(
                 [43.716245366555604, -79.34016622715741],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_4b3315645a4e88ac1ecf1d5498e9bc42 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/canada.png", "popupAnchor": [0, -100]});
-        marker_a9620b6af24e703652e951f53fb8791a.setIcon(custom_icon_4b3315645a4e88ac1ecf1d5498e9bc42);
+        var custom_icon_e36bdcfbe9937b00b8f1e3b4592793de = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/ca.png", "popupAnchor": [0, -100]});
+        marker_2d58f05d26035fcc8a911203a212bb22.setIcon(custom_icon_e36bdcfbe9937b00b8f1e3b4592793de);
         
     
-        var popup_e1f46c366213885e4ba2257d25ae774c = L.popup({"maxWidth": "100%"});
+        var popup_71df27b6442d629339b31966b48401ea = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_2bfe4cf04de68e2a70f3159f90f8a31c = $(`<div id="html_2bfe4cf04de68e2a70f3159f90f8a31c" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Science Centre</h4><img src='https://i.imgur.com/ngmTlTA.jpeg' alt="Science Centre"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
-                popup_e1f46c366213885e4ba2257d25ae774c.setContent(html_2bfe4cf04de68e2a70f3159f90f8a31c);
+                var html_6dc1c947b09afaa2f3dc4808aab6b6af = $(`<div id="html_6dc1c947b09afaa2f3dc4808aab6b6af" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">Science Centre</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/science_centre.jpg?raw=true"alt = "Science Centre"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
+                popup_71df27b6442d629339b31966b48401ea.setContent(html_6dc1c947b09afaa2f3dc4808aab6b6af);
             
         
 
-        marker_a9620b6af24e703652e951f53fb8791a.bindPopup(popup_e1f46c366213885e4ba2257d25ae774c)
+        marker_2d58f05d26035fcc8a911203a212bb22.bindPopup(popup_71df27b6442d629339b31966b48401ea)
         ;
 
         
     
     
-            var marker_0ffc7f6d7cc680f8bd469874ba90f98f = L.marker(
+            var marker_07f9ac45828425cb0eecb1dcd5c468ac = L.marker(
                 [44.526464496121, -80.35017367446154],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_715a529d9fe56b88cb2c26288ff7592d = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/canada.png", "popupAnchor": [0, -100]});
-        marker_0ffc7f6d7cc680f8bd469874ba90f98f.setIcon(custom_icon_715a529d9fe56b88cb2c26288ff7592d);
+        var custom_icon_324758c1fc5ef78aabd1f49548905e10 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/ca.png", "popupAnchor": [0, -100]});
+        marker_07f9ac45828425cb0eecb1dcd5c468ac.setIcon(custom_icon_324758c1fc5ef78aabd1f49548905e10);
         
     
-        var popup_8f7eacd1c44a236179e7ea1d1db02f64 = L.popup({"maxWidth": "100%"});
+        var popup_c0f23018af98b59a2001eda4141a7bcb = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_b09458132396aa463cad6b2bf7ff289b = $(`<div id="html_b09458132396aa463cad6b2bf7ff289b" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Belmanor</h4><img src='https://i.imgur.com/OlHUw0d.jpg' alt="Belmanor"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
-                popup_8f7eacd1c44a236179e7ea1d1db02f64.setContent(html_b09458132396aa463cad6b2bf7ff289b);
+                var html_636494f79c2738c64467f8f538d9ebe8 = $(`<div id="html_636494f79c2738c64467f8f538d9ebe8" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">Belmanor</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/belmanor.jpg?raw=true"alt = "Belmanor"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
+                popup_c0f23018af98b59a2001eda4141a7bcb.setContent(html_636494f79c2738c64467f8f538d9ebe8);
             
         
 
-        marker_0ffc7f6d7cc680f8bd469874ba90f98f.bindPopup(popup_8f7eacd1c44a236179e7ea1d1db02f64)
+        marker_07f9ac45828425cb0eecb1dcd5c468ac.bindPopup(popup_c0f23018af98b59a2001eda4141a7bcb)
         ;
 
         
     
     
-            var marker_71aef15f11d16412d1ffdbcaf4401d41 = L.marker(
+            var marker_7e41291356cf013bbd3df5b94592593f = L.marker(
                 [34.862678, -111.785881],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_48561979ef9282b0b62d5149ab6e509d = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/united_states_of_america.png", "popupAnchor": [0, -100]});
-        marker_71aef15f11d16412d1ffdbcaf4401d41.setIcon(custom_icon_48561979ef9282b0b62d5149ab6e509d);
+        var custom_icon_655571399c0e310bdd02705296c1ca89 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/us.png", "popupAnchor": [0, -100]});
+        marker_7e41291356cf013bbd3df5b94592593f.setIcon(custom_icon_655571399c0e310bdd02705296c1ca89);
         
     
-        var popup_7140b28457d45a4893cc6c98ed9ef4bb = L.popup({"maxWidth": "100%"});
+        var popup_3fc492187a03259990f83450559dc5a8 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_4db4ee87ceb8cd8707b854033ad89a77 = $(`<div id="html_4db4ee87ceb8cd8707b854033ad89a77" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">The Melting Point</h4><img src='https://i.imgur.com/YaMTx4v.jpg' alt="The Melting Point"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
-                popup_7140b28457d45a4893cc6c98ed9ef4bb.setContent(html_4db4ee87ceb8cd8707b854033ad89a77);
+                var html_f79736c27d1a0d65486f2d1ebfd1bc69 = $(`<div id="html_f79736c27d1a0d65486f2d1ebfd1bc69" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">The Melting Point</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/the_melting_point.jpg?raw=true"alt = "The Melting Point"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
+                popup_3fc492187a03259990f83450559dc5a8.setContent(html_f79736c27d1a0d65486f2d1ebfd1bc69);
             
         
 
-        marker_71aef15f11d16412d1ffdbcaf4401d41.bindPopup(popup_7140b28457d45a4893cc6c98ed9ef4bb)
+        marker_7e41291356cf013bbd3df5b94592593f.bindPopup(popup_3fc492187a03259990f83450559dc5a8)
         ;
 
         
     
     
-            var marker_eda685433183eead053581403ed5fab4 = L.marker(
+            var marker_4514d43b216f61803c159c99fdbf8d64 = L.marker(
                 [40.782936, -73.959124],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_04b8c073c02ba29bcda28c646deb78ec = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/united_states_of_america.png", "popupAnchor": [0, -100]});
-        marker_eda685433183eead053581403ed5fab4.setIcon(custom_icon_04b8c073c02ba29bcda28c646deb78ec);
+        var custom_icon_42af52534a27771459e883d3d7c58593 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/us.png", "popupAnchor": [0, -100]});
+        marker_4514d43b216f61803c159c99fdbf8d64.setIcon(custom_icon_42af52534a27771459e883d3d7c58593);
         
     
-        var popup_6b84f8a361fc8bba1188d786d8ab80bb = L.popup({"maxWidth": "100%"});
+        var popup_f1d4adb20e775960dccd1d0f074125c7 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_6c9337beefe52c3fab8c00b2beb86b55 = $(`<div id="html_6c9337beefe52c3fab8c00b2beb86b55" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">The Guggenheim</h4><img src='https://i.imgur.com/MbSRl11.jpg' alt="The Guggenheim"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
-                popup_6b84f8a361fc8bba1188d786d8ab80bb.setContent(html_6c9337beefe52c3fab8c00b2beb86b55);
+                var html_697801a2ecf17c3ddffec34b37f8757d = $(`<div id="html_697801a2ecf17c3ddffec34b37f8757d" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">The Guggenheim</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/the_guggenheim.jpg?raw=true"alt = "The Guggenheim"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
+                popup_f1d4adb20e775960dccd1d0f074125c7.setContent(html_697801a2ecf17c3ddffec34b37f8757d);
             
         
 
-        marker_eda685433183eead053581403ed5fab4.bindPopup(popup_6b84f8a361fc8bba1188d786d8ab80bb)
+        marker_4514d43b216f61803c159c99fdbf8d64.bindPopup(popup_f1d4adb20e775960dccd1d0f074125c7)
         ;
 
         
     
     
-            var marker_1ff28e0c0e3b7b3fe908db6a6761724b = L.marker(
+            var marker_09459057c1c104d77595250fff328e41 = L.marker(
                 [44.51520990123986, -80.35446874749427],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_99e4dfc35f2379b2c61b59758658db33 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/canada.png", "popupAnchor": [0, -100]});
-        marker_1ff28e0c0e3b7b3fe908db6a6761724b.setIcon(custom_icon_99e4dfc35f2379b2c61b59758658db33);
+        var custom_icon_219df40b0dd17d48e04e1b82b2090e97 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/ca.png", "popupAnchor": [0, -100]});
+        marker_09459057c1c104d77595250fff328e41.setIcon(custom_icon_219df40b0dd17d48e04e1b82b2090e97);
         
     
-        var popup_721842c99816d08bbd524ca3b744f156 = L.popup({"maxWidth": "100%"});
+        var popup_fe3c477ba24ac3cd140586ab75ed84c5 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_410fd171f164133f6c98d1b3b1c7de44 = $(`<div id="html_410fd171f164133f6c98d1b3b1c7de44" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Alpine</h4><img src='https://i.imgur.com/EY1OCO4.jpg' alt="Alpine"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
-                popup_721842c99816d08bbd524ca3b744f156.setContent(html_410fd171f164133f6c98d1b3b1c7de44);
+                var html_c9469b9c1e53269337084f9fe37863f3 = $(`<div id="html_c9469b9c1e53269337084f9fe37863f3" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">Alpine</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/alpine.jpg?raw=true"alt = "Alpine"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
+                popup_fe3c477ba24ac3cd140586ab75ed84c5.setContent(html_c9469b9c1e53269337084f9fe37863f3);
             
         
 
-        marker_1ff28e0c0e3b7b3fe908db6a6761724b.bindPopup(popup_721842c99816d08bbd524ca3b744f156)
+        marker_09459057c1c104d77595250fff328e41.bindPopup(popup_fe3c477ba24ac3cd140586ab75ed84c5)
         ;
 
         
     
     
-            var marker_df66268161ab8441afabffbf286fa67f = L.marker(
+            var marker_49402f594ea4cf67d88ecb077820b69d = L.marker(
                 [35.2555, 139.156],
                 {}
-            ).addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-        var custom_icon_351155b67e58ef15ff3511e8563bb965 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_images/japan.png", "popupAnchor": [0, -100]});
-        marker_df66268161ab8441afabffbf286fa67f.setIcon(custom_icon_351155b67e58ef15ff3511e8563bb965);
+        var custom_icon_6e3e58820a286434a6e29b126667db55 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/jp.png", "popupAnchor": [0, -100]});
+        marker_49402f594ea4cf67d88ecb077820b69d.setIcon(custom_icon_6e3e58820a286434a6e29b126667db55);
         
     
-        var popup_4163c239b70bf070efa8a8f598f550bf = L.popup({"maxWidth": "100%"});
+        var popup_2083e28ba2da6410c66ee5bf688c14b8 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_3acb5287e76b4d74cd850f97eb9957d0 = $(`<div id="html_3acb5287e76b4d74cd850f97eb9957d0" style="width: 100.0%; height: 100.0%;"><h4 style="text-align: center; font-family: Futura; font-weight: bold;">Odawara Station</h4><img src='https://i.imgur.com/yEGPE79.jpg' alt="Odawara Station"style="max-width: 300px; max-height: 300px;"><p style="text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
-                popup_4163c239b70bf070efa8a8f598f550bf.setContent(html_3acb5287e76b4d74cd850f97eb9957d0);
+                var html_98122d0fb666f39c68257830581b33c8 = $(`<div id="html_98122d0fb666f39c68257830581b33c8" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">Odawara Station</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/odawara_station.jpg?raw=true"alt = "Odawara Station"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
+                popup_2083e28ba2da6410c66ee5bf688c14b8.setContent(html_98122d0fb666f39c68257830581b33c8);
             
         
 
-        marker_df66268161ab8441afabffbf286fa67f.bindPopup(popup_4163c239b70bf070efa8a8f598f550bf)
+        marker_49402f594ea4cf67d88ecb077820b69d.bindPopup(popup_2083e28ba2da6410c66ee5bf688c14b8)
         ;
 
         
     
     
-            tile_layer_c411ab9cd357b4852d2644281ff37640.addTo(map_ac2eedcafd6a566707f9735602004d3a);
+            var marker_a076efa1a779b4f5f38670359e8329da = L.marker(
+                [45.10783959418499, -79.23436423119166],
+                {}
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
     
-            tile_layer_4aaffef615c00558ce691a34fedecb7f.addTo(map_ac2eedcafd6a566707f9735602004d3a);
+        var custom_icon_84ed40ed676f8966a2d2e0e988c71003 = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/ca.png", "popupAnchor": [0, -100]});
+        marker_a076efa1a779b4f5f38670359e8329da.setIcon(custom_icon_84ed40ed676f8966a2d2e0e988c71003);
         
     
-            tile_layer_c411ab9cd357b4852d2644281ff37640.addTo(map_ac2eedcafd6a566707f9735602004d3a);
+        var popup_7fb3f31962fef8a6d0ce08a937cf48e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bcca6f18b19aa9513a6998773da8a15 = $(`<div id="html_4bcca6f18b19aa9513a6998773da8a15" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">Camp Tamarack</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/camp_tamarack.jpg?raw=true"alt = "Camp Tamarack"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
+                popup_7fb3f31962fef8a6d0ce08a937cf48e8.setContent(html_4bcca6f18b19aa9513a6998773da8a15);
+            
+        
+
+        marker_a076efa1a779b4f5f38670359e8329da.bindPopup(popup_7fb3f31962fef8a6d0ce08a937cf48e8)
+        ;
+
         
     
-            tile_layer_4aaffef615c00558ce691a34fedecb7f.addTo(map_ac2eedcafd6a566707f9735602004d3a);
+    
+            var marker_9ec4f1f37b7471600bc3df4d2583165c = L.marker(
+                [43.652157912961776, -79.38499594116591],
+                {}
+            ).addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
+        
+    
+        var custom_icon_fba9b5076cb295e2a4f77c712a5c406a = L.icon({"iconAnchor": [31, 104], "iconSize": [62, 104], "iconUrl": "https://raw.githubusercontent.com/Logan-Daniels/Happy-Mothers-Day/main/cropped_marker_images/ca.png", "popupAnchor": [0, -100]});
+        marker_9ec4f1f37b7471600bc3df4d2583165c.setIcon(custom_icon_fba9b5076cb295e2a4f77c712a5c406a);
+        
+    
+        var popup_bbd5eb75c0a4d7023272b65baa82ba1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36452df0d03ebd87cc1f49b10a317360 = $(`<div id="html_36452df0d03ebd87cc1f49b10a317360" style="width: 100.0%; height: 100.0%;"><h4 style = "text-align: center; font-family: Futura; font-weight: bold;">Wedding</h4><img src = "https://github.com/Logan-Daniels/Happy-Mothers-Day/blob/main/images/wedding.jpg?raw=true"alt = "Wedding"style="max-width: 300px; max-height: 300px;"><p style = "text-align: center; font-family: streetwear; font-size: 14px;"></p></div>`)[0];
+                popup_bbd5eb75c0a4d7023272b65baa82ba1e.setContent(html_36452df0d03ebd87cc1f49b10a317360);
+            
+        
+
+        marker_9ec4f1f37b7471600bc3df4d2583165c.bindPopup(popup_bbd5eb75c0a4d7023272b65baa82ba1e)
+        ;
+
+        
+    
+    
+            tile_layer_d2fae6bf6be47989bbab345ace0f430c.addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
+        
+    
+            tile_layer_d6c327329e6c1706671f2f34569a4aa3.addTo(map_c5b74dcaca8b95c81944b96c57f348cb);
         
 </script>
 </html>
