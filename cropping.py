@@ -7,6 +7,11 @@ countries = {
     'united_states_of_america': 'us',
     'trinidad_and_tobago': 'tt',
     'cayman_islands': 'ky',
+    'cuba': 'cu',
+    'india': 'in',
+    'russia': 'ru',
+    'united_arab_emirates': 'ae',
+    'china': 'cn',
     }
 for country, code in countries.items():
     img = Image.open(f"original_marker_images/{country}_640.png")
