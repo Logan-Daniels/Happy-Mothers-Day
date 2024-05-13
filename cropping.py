@@ -1,6 +1,13 @@
 from PIL import Image
 
-countries = {'canada': 'ca', 'korea_south': 'kr', 'japan': 'jp', 'united_states_of_america': 'us',}
+countries = {
+    'canada': 'ca',
+    'korea_south': 'kr',
+    'japan': 'jp',
+    'united_states_of_america': 'us',
+    'trinidad_and_tobago': 'tt',
+    'cayman_islands': 'ky',
+    }
 for country, code in countries.items():
     img = Image.open(f"original_marker_images/{country}_640.png")
     left = 188
